@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>BYU Technologies & Supplies | Smart IT Solutions</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/images/byu-logo-2.png">
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            poppins: ['Poppins', 'sans-serif'],
+          },
+        },
+      },
+    }
+  </script>
+</head>
+
+<body class="font-poppins bg-slate-100 text-gray-700 pt-16">
+
+<!-- ================= NAVBAR ================= -->
+<nav class="bg-white shadow fixed w-full top-0 z-50">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="flex justify-between items-center h-16">
+
+      <a href="index.html" class="flex items-center gap-3">
+        <img src="assets/images/byu-logo-2.png"
+             alt="BYU Technologies Logo"
+             class="h-10 w-10 object-contain">
+        <span class="text-xl font-bold text-blue-700">
+          BYU<span class="text-blue-500">Technologies</span>
+        </span>
+      </a>
+
+      <div class="hidden md:flex space-x-8 font-medium">
+        <a href="index.html" class="hover:text-blue-700">Home</a>
+        <a href="about.html" class="hover:text-blue-700">About</a>
+        <a href="services.html" class="hover:text-blue-700">Services</a>
+        <a href="contact.html" class="hover:text-blue-700">Contact</a>
+      </div>
+
+      <a href="contact.html"
+         class="hidden md:inline-block bg-blue-700 text-white px-6 py-2 rounded-full hover:bg-blue-800 transition">
+        Get Started
+      </a>
+
+      <button id="menu-btn" class="md:hidden text-blue-700">
+        <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16"/>
+        </svg>
+      </button>
+
+    </div>
+  </div>
+</nav>
+
+<!-- ================= MOBILE MENU ================= -->
+<div id="mobile-menu"
+     class="hidden fixed top-16 left-0 w-full bg-white shadow-lg z-40 md:hidden">
+  <div class="flex flex-col space-y-4 px-6 py-6 font-medium">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="services.html">Services</a>
+    <a href="contact.html">Contact</a>
+    <a href="contact.html"
+       class="mt-2 bg-blue-700 text-white text-center py-3 rounded-full">
+      Get Started
+    </a>
+  </div>
+</div>
+
+<!-- ================= HERO ================= -->
+<header class="bg-gradient-to-r from-blue-700 to-blue-500 text-white">
+  <div class="max-w-7xl mx-auto px-6 py-24 grid md:grid-cols-2 gap-10 items-center">
+
+    <!-- LEFT CONTENT -->
+    <div>
+
+      <!-- LOGO + COMPANY NAME -->
+      <div class="flex items-center gap-4 mb-6">
+        <img src="assets/images/byu-logo-2.png"
+             alt="BYU Technologies Logo"
+             class="h-16 w-16 object-contain bg-white rounded-full p-2 shadow">
+        <h2 class="text-2xl md:text-3xl font-bold">
+          BYU Technologies & Supplies
+        </h2>
+      </div>
+
+      <h1 class="text-4xl md:text-5xl font-bold mb-6">
+        Smart & Secure IT Solutions for Growing Businesses
+      </h1>
+
+      <p class="text-lg opacity-90 mb-8">
+        BYU Technologies & Supplies delivers custom software,
+        secure networks, reliable hardware maintenance, and
+        professional data protection.
+      </p>
+
+      <a href="services.html"
+         class="inline-block bg-white text-blue-700 font-semibold px-8 py-4 rounded-full shadow hover:bg-blue-50 transition">
+        Our Services
+      </a>
+    </div>
+
+    <!-- RIGHT IMAGE -->
+    <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c"
+         alt="IT Solutions"
+         class="rounded-xl shadow-lg"/>
+  </div>
+</header>
+
+<!-- ================= ABOUT ================= -->
+<section class="py-20 px-6 bg-white">
+  <div class="max-w-5xl mx-auto text-center">
+    <h2 class="text-3xl md:text-4xl font-bold text-blue-700 mb-6">
+      Who We Are
+    </h2>
+
+    <p class="text-lg text-gray-600 leading-relaxed">
+      Founded in 2024 and based in Dar es Salaam, BYU Technologies & Supplies
+      provides end-to-end IT solutions including software development,
+      networking, hardware maintenance, and data security.
+    </p>
+  </div>
+</section>
+
+<!-- ================= SERVICES ================= -->
+<section class="py-20 px-6 bg-slate-100">
+  <div class="max-w-7xl mx-auto text-center">
+
+    <h2 class="text-3xl md:text-4xl font-bold text-blue-700 mb-14">
+      Our Core Services
+    </h2>
+
+    <div class="grid gap-10 sm:grid-cols-2 lg:grid-cols-4">
+
+      <div class="bg-white p-8 rounded-2xl shadow hover:-translate-y-2 transition">
+        <h3 class="text-xl font-semibold text-blue-700 mb-3">Software Development</h3>
+        <p>Custom software, web platforms, and mobile applications.</p>
+      </div>
+
+      <div class="bg-white p-8 rounded-2xl shadow hover:-translate-y-2 transition">
+        <h3 class="text-xl font-semibold text-blue-700 mb-3">Network Solutions</h3>
+        <p>Secure network design, monitoring, and maintenance.</p>
+      </div>
+
+      <div class="bg-white p-8 rounded-2xl shadow hover:-translate-y-2 transition">
+        <h3 class="text-xl font-semibold text-blue-700 mb-3">Hardware Maintenance</h3>
+        <p>Installation, repairs, and maintenance contracts.</p>
+      </div>
+
+      <div class="bg-white p-8 rounded-2xl shadow hover:-translate-y-2 transition">
+        <h3 class="text-xl font-semibold text-blue-700 mb-3">Data Backup & Security</h3>
+        <p>Cybersecurity, backups, and disaster recovery.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ================= CTA ================= -->
+<section class="bg-blue-700 text-white py-16 text-center px-6">
+  <h2 class="text-3xl font-bold mb-4">
+    Ready to Upgrade Your IT Infrastructure?
+  </h2>
+  <p class="mb-8 opacity-90">
+    Partner with BYU Technologies & Supplies today.
+  </p>
+  <a href="contact.html"
+     class="inline-block bg-white text-blue-700 font-semibold px-10 py-4 rounded-full shadow hover:bg-blue-50 transition">
+    Contact Us
+  </a>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer class="bg-blue-950 text-white py-8">
+  <div class="max-w-7xl mx-auto text-center px-6">
+    <p class="text-sm">
+      © 2026 BYU Technologies & Supplies | All rights reserved.
+    </p>
+  </div>
+</footer>
+
+<!-- ================= SCRIPT ================= -->
+<script>
+  const menuBtn = document.getElementById('menu-btn');
+  const mobileMenu = document.getElementById('mobile-menu');
+
+  menuBtn.addEventListener('click', () => {
+    mobileMenu.classList.toggle('hidden');
+  });
+</script>
+
+</body>
+</html>
